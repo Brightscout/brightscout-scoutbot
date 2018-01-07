@@ -24,7 +24,7 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "lint": "eslint *.js context lib --ext .js",
+    "lint": "eslint *.js lib --ext .js",
     "test": "npm run lint && mocha lib --recursive",
     "test-coverage": "istanbul cover _mocha lib -- --recursive",
     "start": "botpress start"
