@@ -26,7 +26,7 @@
     "precommit": "lint-staged",
     "lint": "eslint *.js lib --ext .js",
     "test": "npm run lint && mocha lib --recursive",
-    "test-coverage": "istanbul cover _mocha lib -- --recursive",
+    "test-coverage": "npm run lint && istanbul cover _mocha lib -- --recursive",
     "start": "botpress start"
   },
   "lint-staged": {

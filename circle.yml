@@ -1,0 +1,17 @@
+general:
+  artifacts:
+    - coverage
+
+machine:
+  node:
+    version: 8.9.4
+
+dependencies:
+  override:
+    - yarn
+
+test:
+  override:
+    - yarn run test-coverage
+  post:
+    - node_modules/codeclimate-test-reporter/bin/codeclimate.js < coverage/lcov.info
