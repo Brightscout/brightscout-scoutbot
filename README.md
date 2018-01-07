@@ -1,0 +1,1 @@
+# brightscout-scoutbot
